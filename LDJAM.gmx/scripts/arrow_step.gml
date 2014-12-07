@@ -1,23 +1,23 @@
 if(!stuck)
 {
-	if(place_free(x,y+1))
-	{
-		gravity= 0.1;
-		gravity_direction = 270;
-	}
-	else
-	{
-		gravity=0;
-		gravity_direction = 270;
-	}
-
-	image_angle = direction;
+if(place_free(x,y+1))
+{
+gravity= 0.05;
+gravity_direction = 270;
 }
 else
 {
-	speed = 0;
-	gravity = 0;
-	stuck = true;
+gravity=0;
+gravity_direction = 270;
+}
+
+image_angle = direction;
+}
+else
+{
+speed = 0;
+gravity = 0;
+stuck = true;
 }
 /*
 emitter1 = part_emitter_create(global.particle1);

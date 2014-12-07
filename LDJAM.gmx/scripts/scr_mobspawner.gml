@@ -8,7 +8,7 @@ if(true)
         }
         else
         {
-            e = instance_create(random_range(x-50,x+50),y,choose(obj_enemy_small,obj_enemy_runner,obj_enemy_slug));
+            e = instance_create(random_range(x-50,x+50),y,choose(obj_enemy_small,obj_enemy_runner,obj_enemy_slug,obj_enemy_runner,obj_enemy_slug));
         }
     }
     

@@ -151,7 +151,7 @@
         <arguments>
           <argument>
             <kind>9</kind>
-            <script>scr_slug_arrowcollide</script>
+            <script>scr_runner_arrowcollide</script>
           </argument>
           <argument>
             <kind>0</kind>

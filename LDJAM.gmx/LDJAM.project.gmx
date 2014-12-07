@@ -26,6 +26,7 @@
     </sprites>
     <sprites name="arrow">
       <sprite>sprites\spr_arrow</sprite>
+      <sprite>sprites\spr_blue_arrow</sprite>
       <sprite>sprites\spr_arrow_whiteout</sprite>
     </sprites>
     <sprites name="controllers">
@@ -103,6 +104,7 @@
     <scripts name="runner">
       <script>scripts\scr_runner_step.gml</script>
       <script>scripts\scr_runner_draw.gml</script>
+      <script>scripts\scr_runner_arrowcollide.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -124,6 +126,7 @@
     <object>objects\obj_killer</object>
     <object>objects\obj_deathwheel</object>
     <object>objects\obj_intro</object>
+    <object>objects\obj_title</object>
     <object>objects\obj_gem</object>
   </objects>
   <rooms name="rooms">

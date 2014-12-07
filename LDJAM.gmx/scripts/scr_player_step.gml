@@ -36,21 +36,21 @@ if(!place_free(x,y+1))
 	just_jumped = 2;
 }
 
-if(!place_free(x,y+1) and keyboard_check(vk_up))
+if(!place_free(x,y+1) and (keyboard_check(vk_up) or keyboard_check(vk_space)))
 {
-	vspeed = -15;
+	vspeed = -13;
 	audio_play_sound(snd_jump,10,false);
 	just_jumped = 1
 }
 
-if(keyboard_check_released(vk_up) and just_jumped == 1)
+if((keyboard_check_released(vk_up) or keyboard_check_released(vk_space)) and just_jumped == 1)
 {
 	just_jumped = 2;
 }
 
-if(keyboard_check(vk_up) and just_jumped == 2 and doublejump_used == false)
+if((keyboard_check(vk_up) or keyboard_check(vk_space)) and just_jumped == 2 and doublejump_used == false)
 {
-	vspeed = -15;
+	vspeed = -13;
 	audio_play_sound(snd_jump,10,false);
 	instance_create(x,y+22,obj_landing_cloud);
 	doublejump_used = true;

@@ -6,6 +6,6 @@ global.levellives = 3;
 just_jumped = false;
 doublejump_used = false;
 specials = 0;
-
+in_air = 0;
 
 partsys_init();

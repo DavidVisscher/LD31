@@ -1,5 +1,5 @@
 vspeed = 0;
-move_contact_solid(direction,12);
+move_contact_solid(270,12);
 if(movedir == "left")
 {
     movedir = "right";
