@@ -11,6 +11,9 @@
     <sound>sound\snd_pickup_arrow</sound>
     <sound>sound\snd_explosion_kill</sound>
     <sound>sound\snd_radar</sound>
+    <sound>sound\snd_tripleshot</sound>
+    <sound>sound\snd_alarm</sound>
+    <sound>sound\snd_pickup_gem</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="tileset">
@@ -38,6 +41,7 @@
     </sprites>
     <sprite>sprites\spr_landing</sprite>
     <sprite>sprites\spr_intro</sprite>
+    <sprite>sprites\spr_gem</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -54,6 +58,7 @@
       <script>scripts\scr_player_init.gml</script>
       <script>scripts\scr_player_draw.gml</script>
       <script>scripts\scr_player_collide_enemy.gml</script>
+      <script>scripts\scr_player_collide_gem.gml</script>
     </scripts>
     <scripts name="wall">
       <script>scripts\checksprite.gml</script>
@@ -119,6 +124,7 @@
     <object>objects\obj_killer</object>
     <object>objects\obj_deathwheel</object>
     <object>objects\obj_intro</object>
+    <object>objects\obj_gem</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_intro</room>

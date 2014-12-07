@@ -1,1 +1,2 @@
 stuck = false;
+type = "normal";

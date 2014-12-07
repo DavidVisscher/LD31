@@ -2,7 +2,7 @@
 <sound>
   <kind>0</kind>
   <extension>.wav</extension>
-  <origname>C:\Users\David\Documents\GitHub\LD31\LDJAM.gmx\\sound\audio\snd_pickup_arrow.wav</origname>
+  <origname>alarm.wav</origname>
   <effects>0</effects>
   <volume>
     <volume>1</volume>
@@ -21,8 +21,8 @@
     <bitDepth>16</bitDepth>
   </bitDepths>
   <preload>-1</preload>
-  <data>snd_pickup_arrow.wav</data>
-  <compressed>1</compressed>
+  <data>snd_alarm.wav</data>
+  <compressed>0</compressed>
   <streamed>0</streamed>
-  <uncompressOnLoad>1</uncompressOnLoad>
+  <uncompressOnLoad>0</uncompressOnLoad>
 </sound>
