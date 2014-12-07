@@ -14,13 +14,15 @@ if(true)
     
     if(random_range((global.gamescore/20),1000) > 998)
     {
-        rand_x = random_range(x,room_width);
-        rand_y = random_range(y,room_height);
-        
-        if(place_free(rand_x,rand_y))
+        do
         {
-            g = instance_create(rand_x,rand_y,obj_gem)
+            var xx,yy;
+
+            xx=random(room_width); //Set random x
+            yy=random(room_height); //Set random y
         }
+        until place_empty(xx,yy);
+        g = instance_create(xx,yy,obj_gem)
     }
 }
 
