@@ -17,7 +17,6 @@ if(!dead)
 			//if just landed
 			audio_play_sound(snd_land,10,false);
 			instance_create(x,y+22,obj_landing_cloud);
-			movedir = choose("right","left");
 		}
 		in_air = 0;
 	}
@@ -27,8 +26,16 @@ if(!dead)
 	{
 	x = x-1;
 	}
+	else
+	{
+		movedir = "right";
+	}
 	if(place_free(x+1,y) and movedir == "right")
 	{
 	x = x+1;
+	}
+	else
+	{
+		movedir = "left";
 	}
 }
