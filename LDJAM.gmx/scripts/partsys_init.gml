@@ -1,0 +1,12 @@
+global.particle1 = part_type_create();
+part_type_shape(global.particle1,pt_shape_line);
+part_type_size(global.particle1,0.20,0.60,0,0);
+part_type_scale(global.particle1,0.65,2.50);
+part_type_color3(global.particle1,65535,33023,255);
+part_type_alpha3(global.particle1,0.04,0.06,0.07);
+part_type_speed(global.particle1,0.70,2.60,-0.02,0);
+part_type_direction(global.particle1,260,280,0,9);
+part_type_gravity(global.particle1,0.20,90);
+part_type_orientation(global.particle1,0,0,10,20,1);
+part_type_blend(global.particle1,1);
+part_type_life(global.particle1,20,30);
